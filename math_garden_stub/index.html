@@ -6,10 +6,22 @@
   <link rel='stylesheet' href='css/styles.css'>
   <!-- Custom font -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap'>
+  <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+
   </script>
+
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  
+
+  <script src="vendor\opencv.js"></script>
+
+
+  <script src="maths.js"></script>
 
   <!-- TODO: Add Javascript files here -->
+
+  <script src="drowing.js"></script>
+  <script src="processing.js"></script>
 
 </head>
 
@@ -32,17 +44,17 @@
 
   <!-- TODO: Set up TF model and drawing logic-->
   <script>
-    async function loadModel() {
 
-      const dataX0 = [[0.00]];
+    loadModel();
+    prepareCanvas();
+    nextQuestion();
 
-      const myTensor = tf.tensor(dataX0);
-      const model = await tf.loadGraphModel('my_model_tfjs/model.json')
-      const result = model.predict(myTensor);
-      result.print();
-    }
+    document.getElementById("checkAnswer").addEventListener('click', function (){
+      checkAnswer();
+      clearCanvas();
+      nextQuestion();
+    })
 
-    loadModel()
 
   </script>
 </body>
