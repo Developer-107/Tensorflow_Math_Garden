@@ -1,28 +1,20 @@
 # 🌱 TensorFlow Math Garden
 
-TensorFlow Math Garden is a simple web-based addition trainer built with TensorFlow.js. It was originally inspired by an App Brewery project but built entirely from scratch to practice and strengthen my understanding of machine learning in the browser.
+TensorFlow Math Garden is a simple, browser-based addition trainer built with TensorFlow.js. Inspired by an App Brewery concept but completely rebuilt from scratch, this project was created to practice and strengthen my frontend machine learning skills.
 
 🎯 Purpose
-This project is purely for learning purposes. It helped me get hands-on experience with:
-
-TensorFlow.js fundamentals
-
-Creating and training models directly in the browser
-
-Handling number inputs and training data manually
-
-Visualizing model predictions in real-time
+- This project was developed entirely for learning purposes. It helped me:
+- Understand how to build and train neural networks in the browser
+- Gain experience with TensorFlow.js
+- Learn how machine learning models can be applied to basic math problems
+- Build everything from scratch, including the custom model architecture
 
 ➕ What It Does
-Trains a basic neural network to learn simple addition (e.g., 3 + 5 = 8)
-
-Accepts user-defined input data pairs and trains the model interactively
-
-Displays predicted outputs and adjusts as the model learns
-
-All computation happens in the browser with no server-side code
+- Uses a custom-built neural network to learn and predict simple addition problems (e.g., 3 + 5 = 8)
+- Lets users input training data and see how the model improves over time
+- Provides live predictions directly in the browser with no backend required
+- Offers a visual and interactive way to explore how ML models work
 
 🧰 Tech Stack
-
-TensorFlow.js – machine learning in the browser
-JavaScript / HTML / CSS – UI and interaction
+- TensorFlow.js – for building and training the neural network
+- JavaScript / HTML / CSS – for the frontend interface
